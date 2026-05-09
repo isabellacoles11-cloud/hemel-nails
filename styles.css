@@ -44,30 +44,47 @@ nav ul {
 nav ul li {
   margin: 0 15px;
 }
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway&display=swap');
 
-nav ul li a {
-  color: #fff;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1.1em;
-  padding: 8px 16px;
-  border-radius: 20px;
-  transition: background-color 0.3s, color 0.3s;
+body {
+  font-family: 'Raleway', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #ffe4e1; /* Light pink background */
+  color: #333;
+  line-height: 1.6;
 }
 
-nav ul li a:hover {
-  background-color: #ffe4e1;
-  color: #ff69b4;
+/* Header style */
+header {
+  background-color: #ff69b4; /* Pink */
+  color: #fff;
+  padding: 40px 20px;
+  text-align: center;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  border-bottom: 5px solid #ff1493;
+  border-radius: 0 0 15px 15px;
+}
+
+header h1 {
+  font-family: 'Pacifico', cursive;
+  font-size: 3em;
+  margin: 0;
+}
+
+header p {
+  font-size: 1.2em;
+  margin-top: 10px;
 }
 
 /* Section styles */
 section {
   padding: 50px 20px;
-  max-width: 900px;
+  max-width: 1000px;
   margin: 20px auto;
-  background-color: #fff0f5; /* Light pinkish background */
+  background-color: #fff0f5;
   border-radius: 20px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
 }
 
 h2 {
@@ -78,11 +95,51 @@ h2 {
   text-align: center;
 }
 
+.menu-category {
+  margin-bottom: 30px;
+}
+
+.menu-category h3 {
+  font-size: 2em;
+  margin-bottom: 15px;
+  color: #ff1493;
+  border-bottom: 2px solid #ff1493;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
 ul {
-  list-style: disc inside;
-  padding-left: 20px;
+  list-style: none;
+  padding: 0;
   font-size: 1.2em;
-  margin-top: 20px;
+}
+
+ul li {
+  padding: 8px 0;
+  border-bottom: 1px solid #ffe4e1;
+  display: flex;
+  justify-content: space-between;
+}
+
+#contact {
+  text-align: center;
+  margin-top: 30px;
+}
+
+#contact p {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+
+footer {
+  background-color: #ff69b4;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  border-top: 5px solid #ff1493;
+  border-radius: 0 0 15px 15px;
+  margin-top: 40px;
+}
 }
 
 #contact p {
